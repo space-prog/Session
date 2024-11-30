@@ -19,10 +19,10 @@
             $game = $_SESSION['game'];
             $victory = $_SESSION['victory'];
         }
-        
+
         if(isset($_POST["choise"])) {
             $rand = rand(0, 1);
-            $_SESSION['level'] = ++$game;
+            $_SESSION['game'] = ++$game;
             echo "games $game <br>";
             $choise = $_POST['choise'];
             if($choise == $rand) {
