@@ -18,7 +18,7 @@
                     if(isset($_SESSION['globalLevel'])) {
                         $globalLevel = $_SESSION['globalLevel'];
                     } else {
-                        $globalLevel = $_SESSION['globalLvel'] = 0;
+                        $globalLevel = $_SESSION['globalLevel'] = 0;
                     }
                     if($globalLevel == 0) {
                         echo "disabled";
